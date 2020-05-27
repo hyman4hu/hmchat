@@ -1,0 +1,334 @@
+2020-05-27 15:15:22,133 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 2004 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:15:22,136 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:15:22,758 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:15:22,764 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:15:22,764 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:15:22,765 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:15:22,820 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:15:22,821 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 655 ms
+2020-05-27 15:15:22,911 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:15:22,914 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:15:22,919 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:15:22,943 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:15:23,120 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:15:23,137 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:15:23,139 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:15:23,139 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:15:23,140 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:15:23,155 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.497 seconds (JVM running for 2.378)
+2020-05-27 15:16:22,942 [MessageBroker-1] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-05-27 15:23:00,679 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 15:23:00,681 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 15:23:00,682 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:23:00,682 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 15:23:01,088 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:23:01,089 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:23:01,090 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:23:01,091 [RMI TCP Connection(27)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:23:06,855 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 18452 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:23:06,858 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:23:07,474 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:23:07,480 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:23:07,481 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:23:07,481 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:23:07,531 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:23:07,532 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 647 ms
+2020-05-27 15:23:07,615 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:23:07,617 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:23:07,622 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:23:07,645 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:23:07,817 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:23:07,841 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:23:07,843 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:23:07,843 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:23:07,844 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:23:07,850 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.332 seconds (JVM running for 2.207)
+2020-05-27 15:24:07,645 [MessageBroker-1] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-05-27 15:27:08,018 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 15:27:08,020 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 15:27:08,020 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:27:08,020 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 15:27:08,421 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:27:08,421 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:27:08,422 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:27:08,422 [RMI TCP Connection(18)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:27:14,276 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 12244 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:27:14,279 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:27:14,993 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:27:14,999 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:27:15,000 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:27:15,000 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:27:15,050 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:27:15,051 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 738 ms
+2020-05-27 15:27:15,136 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:27:15,139 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:27:15,145 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:27:15,176 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:27:15,412 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:27:15,429 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:27:15,431 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:27:15,432 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:27:15,432 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:27:15,439 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.557 seconds (JVM running for 2.438)
+2020-05-27 15:28:15,173 [MessageBroker-1] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-05-27 15:28:37,780 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 15:28:37,781 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 15:28:37,782 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:28:37,782 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 15:28:38,163 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:28:38,164 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:28:38,165 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:28:38,165 [RMI TCP Connection(10)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:28:43,897 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 11128 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:28:43,899 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:28:44,523 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:28:44,529 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:28:44,530 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:28:44,530 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:28:44,581 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:28:44,582 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 653 ms
+2020-05-27 15:28:44,674 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:28:44,676 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:28:44,682 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:28:44,706 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:28:44,889 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:28:44,907 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:28:44,908 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:28:44,908 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:28:44,909 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:28:44,914 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.35 seconds (JVM running for 2.195)
+2020-05-27 15:29:44,706 [MessageBroker-1] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-05-27 15:33:53,716 [http-nio-8080-exec-2] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-27 15:33:53,716 [http-nio-8080-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2020-05-27 15:33:53,721 [http-nio-8080-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 4 ms
+2020-05-27 15:35:16,449 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 15:35:16,452 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 15:35:16,452 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:35:16,452 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 15:35:16,868 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:35:16,868 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:35:16,869 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:35:16,870 [RMI TCP Connection(23)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:35:22,551 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 16548 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:35:22,553 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:35:23,164 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:35:23,171 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:35:23,171 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:35:23,171 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:35:23,221 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:35:23,222 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 641 ms
+2020-05-27 15:35:23,302 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:35:23,305 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:35:23,309 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:35:23,331 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:35:23,496 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:35:23,512 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:35:23,514 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:35:23,514 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:35:23,515 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:35:23,520 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.292 seconds (JVM running for 2.11)
+2020-05-27 15:35:26,829 [http-nio-8080-exec-2] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-27 15:35:26,829 [http-nio-8080-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2020-05-27 15:35:26,833 [http-nio-8080-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 3 ms
+2020-05-27 15:36:23,329 [MessageBroker-8] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 30], outboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 3, completed tasks = 14]
+2020-05-27 15:53:50,404 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 15:53:50,408 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 15:53:50,409 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:53:50,409 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 15:53:50,811 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:53:50,812 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:53:50,812 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:53:50,813 [RMI TCP Connection(48)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:53:56,525 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 3276 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:53:56,528 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:53:57,146 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:53:57,153 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:53:57,154 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:53:57,154 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:53:57,204 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:53:57,205 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 646 ms
+2020-05-27 15:53:57,284 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:53:57,286 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:53:57,291 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:53:57,314 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:53:57,485 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:53:57,515 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:53:57,517 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:53:57,517 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:53:57,518 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:53:57,526 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.33 seconds (JVM running for 2.156)
+2020-05-27 15:54:03,035 [http-nio-8080-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-27 15:54:03,036 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2020-05-27 15:54:03,041 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 5 ms
+2020-05-27 15:54:57,314 [MessageBroker-7] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 75], outboundChannel[pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 10], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 3, completed tasks = 13]
+2020-05-27 15:58:07,939 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 15:58:07,946 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 15:58:07,947 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:58:07,948 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 15:58:08,358 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:58:08,359 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:58:08,359 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:58:08,360 [RMI TCP Connection(15)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:58:22,125 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:55 - Starting HmchatApplication on huyinpc with PID 4244 (D:\worksts\hmchat\target\classes started by hyman in D:\worksts\hmchat)
+2020-05-27 15:58:22,127 [main] INFO  [fun.hyman.hmchat.HmchatApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 15:58:22,835 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2020-05-27 15:58:22,843 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:58:22,844 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-27 15:58:22,844 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 15:58:22,902 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-27 15:58:22,902 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 746 ms
+2020-05-27 15:58:23,022 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 15:58:23,025 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 15:58:23,029 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 15:58:23,053 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 15:58:23,282 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-27 15:58:23,326 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-27 15:58:23,328 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 15:58:23,329 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 15:58:23,329 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 15:58:23,341 [main] INFO  [fun.hyman.hmchat.HmchatApplication] StartupInfoLogger.java:61 - Started HmchatApplication in 1.571 seconds (JVM running for 2.491)
+2020-05-27 15:58:24,076 [http-nio-8080-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-27 15:58:24,076 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2020-05-27 15:58:24,081 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 5 ms
+2020-05-27 15:58:32,098 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566312007, msg=this.state.textareaValue)
+2020-05-27 15:58:37,009 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566317007, msg=this.state.textareaValue)
+2020-05-27 15:58:42,008 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566322007, msg=this.state.textareaValue)
+2020-05-27 15:58:47,008 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566327006, msg=this.state.textareaValue)
+2020-05-27 15:58:52,008 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566332007, msg=this.state.textareaValue)
+2020-05-27 15:58:57,008 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566337006, msg=this.state.textareaValue)
+2020-05-27 15:59:02,008 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566342006, msg=this.state.textareaValue)
+2020-05-27 15:59:07,007 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566347006, msg=this.state.textareaValue)
+2020-05-27 15:59:12,008 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566352007, msg=this.state.textareaValue)
+2020-05-27 15:59:17,009 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566357007, msg=this.state.textareaValue)
+2020-05-27 15:59:22,007 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566362006, msg=this.state.textareaValue)
+2020-05-27 15:59:23,052 [MessageBroker-4] INFO  [o.s.web.socket.config.WebSocketMessageBrokerStats] WebSocketMessageBrokerStats.java:126 - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 63], outboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 28], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 3, completed tasks = 12]
+2020-05-27 15:59:27,007 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566367006, msg=this.state.textareaValue)
+2020-05-27 15:59:32,008 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566372006, msg=this.state.textareaValue)
+2020-05-27 15:59:37,008 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566377006, msg=this.state.textareaValue)
+2020-05-27 15:59:42,008 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566382006, msg=this.state.textareaValue)
+2020-05-27 15:59:47,008 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566387005, msg=this.state.textareaValue)
+2020-05-27 15:59:52,008 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566392006, msg=this.state.textareaValue)
+2020-05-27 15:59:57,008 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566397006, msg=this.state.textareaValue)
+2020-05-27 16:00:02,008 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566402005, msg=this.state.textareaValue)
+2020-05-27 16:00:07,009 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566407007, msg=this.state.textareaValue)
+2020-05-27 16:00:12,008 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566412006, msg=this.state.textareaValue)
+2020-05-27 16:00:17,007 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566417006, msg=this.state.textareaValue)
+2020-05-27 16:00:22,007 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566422005, msg=this.state.textareaValue)
+2020-05-27 16:00:27,008 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566427006, msg=this.state.textareaValue)
+2020-05-27 16:00:32,007 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566432005, msg=this.state.textareaValue)
+2020-05-27 16:00:37,013 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566437006, msg=this.state.textareaValue)
+2020-05-27 16:00:42,008 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566442006, msg=this.state.textareaValue)
+2020-05-27 16:00:47,009 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566447007, msg=this.state.textareaValue)
+2020-05-27 16:00:52,009 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566452006, msg=this.state.textareaValue)
+2020-05-27 16:00:57,008 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566457006, msg=this.state.textareaValue)
+2020-05-27 16:01:02,009 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566462007, msg=this.state.textareaValue)
+2020-05-27 16:01:07,010 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566467006, msg=this.state.textareaValue)
+2020-05-27 16:01:12,009 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566472006, msg=this.state.textareaValue)
+2020-05-27 16:01:17,008 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566477006, msg=this.state.textareaValue)
+2020-05-27 16:01:22,008 [clientInboundChannel-17] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566482006, msg=this.state.textareaValue)
+2020-05-27 16:01:27,008 [clientInboundChannel-14] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566487006, msg=this.state.textareaValue)
+2020-05-27 16:01:32,008 [clientInboundChannel-15] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=this.state.username, timestamp=1590566492006, msg=this.state.textareaValue)
+2020-05-27 16:02:00,951 [clientInboundChannel-9] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566520938, msg=this.state.textareaValue)
+2020-05-27 16:02:05,940 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566525938, msg=this.state.textareaValue)
+2020-05-27 16:02:10,939 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566530938, msg=this.state.textareaValue)
+2020-05-27 16:02:15,940 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566535938, msg=this.state.textareaValue)
+2020-05-27 16:02:20,939 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566540938, msg=this.state.textareaValue)
+2020-05-27 16:02:25,940 [clientInboundChannel-11] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566545938, msg=this.state.textareaValue)
+2020-05-27 16:02:30,940 [clientInboundChannel-9] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566550938, msg=this.state.textareaValue)
+2020-05-27 16:02:35,939 [clientInboundChannel-12] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566555938, msg=this.state.textareaValue)
+2020-05-27 16:02:40,939 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566560938, msg=this.state.textareaValue)
+2020-05-27 16:02:52,850 [clientInboundChannel-13] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566572842, msg=this.state.textareaValue)
+2020-05-27 16:02:57,844 [clientInboundChannel-4] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566577842, msg=this.state.textareaValue)
+2020-05-27 16:03:02,843 [clientInboundChannel-11] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566582842, msg=this.state.textareaValue)
+2020-05-27 16:03:07,842 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566587841, msg=this.state.textareaValue)
+2020-05-27 16:03:12,843 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566592842, msg=this.state.textareaValue)
+2020-05-27 16:03:17,844 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566597842, msg=this.state.textareaValue)
+2020-05-27 16:03:22,843 [clientInboundChannel-13] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566602842, msg=this.state.textareaValue)
+2020-05-27 16:03:27,842 [clientInboundChannel-4] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566607842, msg=this.state.textareaValue)
+2020-05-27 16:03:32,844 [clientInboundChannel-11] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566612842, msg=this.state.textareaValue)
+2020-05-27 16:03:37,844 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566617842, msg=this.state.textareaValue)
+2020-05-27 16:03:42,843 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566622842, msg=this.state.textareaValue)
+2020-05-27 16:03:47,844 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566627843, msg=this.state.textareaValue)
+2020-05-27 16:03:52,843 [clientInboundChannel-13] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566632843, msg=this.state.textareaValue)
+2020-05-27 16:03:57,842 [clientInboundChannel-4] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566637841, msg=this.state.textareaValue)
+2020-05-27 16:04:02,843 [clientInboundChannel-11] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566642842, msg=this.state.textareaValue)
+2020-05-27 16:04:07,843 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566647842, msg=this.state.textareaValue)
+2020-05-27 16:04:12,842 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566652841, msg=this.state.textareaValue)
+2020-05-27 16:04:17,843 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566657842, msg=this.state.textareaValue)
+2020-05-27 16:04:22,843 [clientInboundChannel-13] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566662842, msg=this.state.textareaValue)
+2020-05-27 16:04:27,843 [clientInboundChannel-4] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566667842, msg=this.state.textareaValue)
+2020-05-27 16:04:32,843 [clientInboundChannel-11] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566672842, msg=this.state.textareaValue)
+2020-05-27 16:04:37,843 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566677842, msg=this.state.textareaValue)
+2020-05-27 16:04:42,842 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566682841, msg=this.state.textareaValue)
+2020-05-27 16:04:47,843 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566687842, msg=this.state.textareaValue)
+2020-05-27 16:04:52,842 [clientInboundChannel-13] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566692842, msg=this.state.textareaValue)
+2020-05-27 16:04:57,844 [clientInboundChannel-4] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566697842, msg=this.state.textareaValue)
+2020-05-27 16:05:02,844 [clientInboundChannel-11] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566702842, msg=this.state.textareaValue)
+2020-05-27 16:05:07,843 [clientInboundChannel-1] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566707842, msg=this.state.textareaValue)
+2020-05-27 16:05:14,269 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566714261, msg=this.state.textareaValue)
+2020-05-27 16:05:19,261 [clientInboundChannel-16] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566719260, msg=this.state.textareaValue)
+2020-05-27 16:05:24,262 [clientInboundChannel-17] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566724260, msg=this.state.textareaValue)
+2020-05-27 16:05:29,262 [clientInboundChannel-6] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566729261, msg=this.state.textareaValue)
+2020-05-27 16:05:34,263 [clientInboundChannel-5] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566734261, msg=this.state.textareaValue)
+2020-05-27 16:05:39,262 [clientInboundChannel-2] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566739260, msg=this.state.textareaValue)
+2020-05-27 16:05:52,325 [clientInboundChannel-9] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566752317, msg=this.state.textareaValue)
+2020-05-27 16:05:57,318 [clientInboundChannel-14] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566757316, msg=this.state.textareaValue)
+2020-05-27 16:06:02,317 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566762316, msg=this.state.textareaValue)
+2020-05-27 16:06:07,601 [clientInboundChannel-15] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566767594, msg=this.state.textareaValue)
+2020-05-27 16:06:12,595 [clientInboundChannel-18] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566772593, msg=this.state.textareaValue)
+2020-05-27 16:06:17,595 [clientInboundChannel-8] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566777593, msg=this.state.textareaValue)
+2020-05-27 16:06:22,595 [clientInboundChannel-17] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566782593, msg=this.state.textareaValue)
+2020-05-27 16:06:27,595 [clientInboundChannel-6] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566787593, msg=this.state.textareaValue)
+2020-05-27 16:06:32,594 [clientInboundChannel-7] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=test, timestamp=1590566792593, msg=this.state.textareaValue)
+2020-05-27 16:08:50,804 [clientInboundChannel-21] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=匿名, timestamp=1590566930801, msg=11111)
+2020-05-27 16:09:04,171 [clientInboundChannel-22] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=匿名, timestamp=1590566944170, msg=2222)
+2020-05-27 16:11:05,102 [clientInboundChannel-39] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=匿名, timestamp=1590567065101, msg=111)
+2020-05-27 16:13:44,826 [clientInboundChannel-53] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=匿名, timestamp=1590567224824, msg=9999)
+2020-05-27 16:14:20,906 [clientInboundChannel-67] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=匿名, timestamp=1590567260903, msg=123)
+2020-05-27 16:14:59,957 [clientInboundChannel-64] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=匿名, timestamp=1590567299955, msg=2223)
+2020-05-27 16:20:31,492 [clientInboundChannel-110] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=huyin, timestamp=1590567631490, msg=123)
+2020-05-27 16:20:40,946 [clientInboundChannel-101] INFO  [fun.hyman.hmchat.controller.ChatController] ChatController.java:21 - ChatMsg(username=huyin, timestamp=1590567640945, msg=122
+房价大脸看
+规范)
+2020-05-27 16:25:57,383 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] SpringApplicationAdminMXBeanRegistrar.java:159 - Application shutdown requested.
+2020-05-27 16:25:57,385 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 16:25:57,385 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 16:25:57,385 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 16:25:57,765 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 16:25:57,765 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 16:25:57,766 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 16:25:57,766 [RMI TCP Connection(65)-127.0.0.1] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 16:26:25,143 [main] INFO  [fun.hyman.hmchat.HmchatApplicationTests] StartupInfoLogger.java:55 - Starting HmchatApplicationTests on huyinpc with PID 12376 (started by hyman in D:\worksts\hmchat)
+2020-05-27 16:26:25,145 [main] INFO  [fun.hyman.hmchat.HmchatApplicationTests] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 16:26:25,897 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 16:26:25,906 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 16:26:25,927 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 16:26:25,982 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 16:26:26,617 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 16:26:26,618 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 16:26:26,619 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 16:26:26,631 [main] INFO  [fun.hyman.hmchat.HmchatApplicationTests] StartupInfoLogger.java:61 - Started HmchatApplicationTests in 1.901 seconds (JVM running for 3.067)
+2020-05-27 16:26:26,852 [SpringContextShutdownHook] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 16:26:26,852 [SpringContextShutdownHook] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 16:26:26,853 [SpringContextShutdownHook] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 16:26:26,856 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 16:26:26,857 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 16:26:26,858 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 16:26:26,859 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 16:28:27,458 [main] INFO  [fun.hyman.hmchat.HmchatApplicationTests] StartupInfoLogger.java:55 - Starting HmchatApplicationTests on huyinpc with PID 19596 (started by hyman in D:\worksts\hmchat)
+2020-05-27 16:28:27,460 [main] INFO  [fun.hyman.hmchat.HmchatApplicationTests] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-27 16:28:28,382 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-27 16:28:28,392 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 16:28:28,411 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 16:28:28,466 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-27 16:28:29,138 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Starting...
+2020-05-27 16:28:29,139 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 16:28:29,140 [main] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Started.
+2020-05-27 16:28:29,151 [main] INFO  [fun.hyman.hmchat.HmchatApplicationTests] StartupInfoLogger.java:61 - Started HmchatApplicationTests in 2.114 seconds (JVM running for 3.054)
+2020-05-27 16:28:29,362 [SpringContextShutdownHook] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopping...
+2020-05-27 16:28:29,363 [SpringContextShutdownHook] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-27 16:28:29,363 [SpringContextShutdownHook] INFO  [o.s.m.simp.broker.SimpleBrokerMessageHandler] CompositeLog.java:137 - Stopped.
+2020-05-27 16:28:29,364 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'brokerChannelExecutor'
+2020-05-27 16:28:29,365 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-05-27 16:28:29,366 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-05-27 16:28:29,367 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'clientInboundChannelExecutor'
