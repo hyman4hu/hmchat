@@ -3,5 +3,4 @@ server:
 
 logging:
   file:
-    path: /opt/hmchat/logs   
- 
+    path: /opt/hmchat/logs
