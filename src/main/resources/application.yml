@@ -1,6 +1,7 @@
 server:
-  port: 18083
+  port: 8083
 
 logging:
   file:
-    path: /opt/hmchat/logs
+    path: /opt/hmchat/logs   
+ 
