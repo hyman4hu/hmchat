@@ -17,8 +17,8 @@ public class MyWebSocketMessageBrokerConfig implements WebSocketMessageBrokerCon
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		registry.addEndpoint("/stomp-websocket") // 添加STOMP协议的端点
-				.setAllowedOrigins("*") // 设置允许可跨域的域名
-				.withSockJS(); // 指定使用SockJS协议
+				.setAllowedOrigins("*"); // 设置允许可跨域的域名
+//				.withSockJS(); // 指定使用SockJS协议
 
 	}
 
@@ -32,5 +32,4 @@ public class MyWebSocketMessageBrokerConfig implements WebSocketMessageBrokerCon
 //		registry.setPathMatcher(new AntPathMatcher("."));// 可以以“.”来分割路径，看看类级别的@messageMapping和方法级别的@messageMapping
 	}
 
-	
 }
