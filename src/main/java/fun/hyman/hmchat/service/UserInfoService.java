@@ -1,6 +1,5 @@
 package fun.hyman.hmchat.service;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -12,44 +11,40 @@ import org.springframework.stereotype.Component;
 
 import cn.hutool.cache.Cache;
 import cn.hutool.cache.impl.TimedCache;
-import cn.hutool.core.date.LocalDateTimeUtil;
 import fun.hyman.hmchat.dto.HeartbeatDTO;
-import fun.hyman.hmchat.vo.ClientInfoVO;
+import fun.hyman.hmchat.vo.UserInfoVO;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 
- * @author huyin3
+ * @author Hyman
  * @date 2022/06/04
  */
-@Slf4j
 @Component
 @RequiredArgsConstructor
-public class ClientInfoService {
+public class UserInfoService {
 
-    private Cache<String, ClientInfoVO> clientInfoCache = new TimedCache<>(20 * 1000);// 保存客户端信息
+    private Cache<String, UserInfoVO> userInfoCache = new TimedCache<>(20 * 1000);// 保存客户端信息
 
     private final SimpMessagingTemplate messagingTemplate;
 
     @Scheduled(cron = "*/10 * * * * *") // 每10秒执行一次
     public void scheduledMethod() {
-        log.info("scheduledMethod - {}", LocalDateTimeUtil.formatNormal(LocalDateTime.now()));
-        messagingTemplate.convertAndSend("/topic/clientInfos", clientInfos());
+        messagingTemplate.convertAndSend("/topic/userInfos", userInfos());
     }
 
-    public List<ClientInfoVO> clientInfos() {
-        List<ClientInfoVO> vos = new ArrayList<>();
-        clientInfoCache.forEach(vo -> {
+    public List<UserInfoVO> userInfos() {
+        List<UserInfoVO> vos = new ArrayList<>();
+        userInfoCache.forEach(vo -> {
             vos.add(vo);
         });
         return vos;
     }
 
-    public Set<String> getClientIds() {
+    public Set<String> getUserIds() {
         Set<String> ret = new HashSet<>();
-        clientInfoCache.forEach(vo -> {
-            ret.add(vo.getClientId());
+        userInfoCache.forEach(vo -> {
+            ret.add(vo.getUserId());
         });
         return ret;
     }
@@ -61,11 +56,11 @@ public class ClientInfoService {
      * @param ip
      */
     public void cache(HeartbeatDTO heartbeat, String ip) {
-        ClientInfoVO vo = new ClientInfoVO();
-        vo.setClientId(heartbeat.getClientId());
-        vo.setClientName(heartbeat.getClientName());
+        UserInfoVO vo = new UserInfoVO();
+        vo.setUserId(heartbeat.getUserId());
+        vo.setFullName(heartbeat.getFullName());
         vo.setIp(ip);
-        clientInfoCache.put(heartbeat.getClientId(), vo);
+        userInfoCache.put(heartbeat.getUserId(), vo);
     }
 
 }

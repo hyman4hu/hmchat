@@ -11,8 +11,8 @@ import lombok.Data;
 @Data
 public class HeartbeatDTO {
 
-    private String clientId;
+    private String userId;
 
-    private String clientName;
+    private String fullName;
 
 }

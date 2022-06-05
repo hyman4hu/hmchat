@@ -1,5 +1,9 @@
 package fun.hyman.hmchat.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 import lombok.Data;
 
 /**
@@ -9,54 +13,52 @@ import lombok.Data;
  * @date 2020年5月27日
  */
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(Include.NON_NULL)
 public class ChatMsgDTO {
 
-    private String clientId;
-
-    private ChatMsgData data;
-
-    private FileInfo fileInfo;
-
-    @Data
-    public static class ChatMsgData {
-
-
-        private String fullName;
-
-        private String userId;
-
-        private String msg;
-
-        /**
-         * 时间，yyyy-MM-dd HH:mm:ss
-         */
-        private String datetime;
-    }
+    /**
+     * 用户姓名
+     */
+    private String fullName;
 
     /**
-     * 附件信息
+     * 用户ID
      */
-    @Data
-    public static class FileInfo {
+    private long userId;
 
-        /**
-         * 原始文件名，上传时的文件名。不唯一
-         */
-        private String originFileName;
+    /**
+     * 消息内容
+     */
+    private String msg;
 
-        /**
-         * 程序生成的唯一ID
-         */
-        private String uid;
+    /**
+     * 时间，yyyy-MM-dd HH:mm:ss
+     */
+    private String datetime;
 
-        /**
-         * 文件类型，不包含"."
-         */
-        private String fileType;
+    /**
+     * 消息类型：1-text、2-file
+     */
+    private String msgType;
 
-        /**
-         * 文件大小（字节）
-         */
-        private Long size;
-    }
+    /**
+     * 原始文件名，上传时的文件名。不唯一
+     */
+    private String fileOriginName;
+
+    /**
+     * 文件类型，不包含"."
+     */
+    private String fileType;
+
+    /**
+     * 文件大小，字节
+     */
+    private Long fileSize;
+
+    /**
+     * 真实存储文件路径
+     */
+    private String filePath;
 }

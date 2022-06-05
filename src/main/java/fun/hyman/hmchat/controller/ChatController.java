@@ -1,17 +1,18 @@
 package fun.hyman.hmchat.controller;
 
-import java.util.Set;
-
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import fun.hyman.hmchat.common.R;
 import fun.hyman.hmchat.dto.ChatMsgDTO;
 import fun.hyman.hmchat.dto.HeartbeatDTO;
-import fun.hyman.hmchat.service.ClientInfoService;
+import fun.hyman.hmchat.service.ChatMsgService;
+import fun.hyman.hmchat.service.UserInfoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -30,20 +31,21 @@ public class ChatController {
      */
     private final SimpMessagingTemplate messagingTemplate;
 
-    private final ClientInfoService clientInfoService;
+    private final UserInfoService userInfoService;
+
+    private final ChatMsgService chatMsgService;
 
 //    @SendTo("/topic/msg")
 	@MessageMapping("/say")
     public void say(@RequestBody ChatMsgDTO msg) {
+        this.chatMsgService.save(msg);
         log.info("say msg - {}", msg.toString());
-        Set<String> clientIds = clientInfoService.getClientIds();
-        for (String clientId : clientIds) {
-            log.info("dest - /{}/msg", clientId);
-            if (clientId.equals(msg.getClientId())) {
-                continue;
-            }
-            messagingTemplate.convertAndSendToUser(clientId, "/msg", msg);
-        }
+        messagingTemplate.convertAndSend("/topic/msg", msg);
+//        Set<String> userIds = userInfoService.getUserIds();
+//        for (String userId : userIds) {
+//            log.info("dest - /{}/msg", userId);
+//            messagingTemplate.convertAndSendToUser(userId, "/msg", msg);
+//        }
     }
 
     /**
@@ -54,8 +56,14 @@ public class ChatController {
     @MessageMapping("/heartbeat")
     public void heartbeat(@RequestBody HeartbeatDTO heartbeat, SimpMessageHeaderAccessor ha) {
         String ip = (String) ha.getSessionAttributes().get("ip");
-        log.info("heartbeat - {}", heartbeat.toString());
-        clientInfoService.cache(heartbeat, ip);
+        userInfoService.cache(heartbeat, ip);
     }
 
+    /**
+     * 获取所有消息，系统最多存储1000条消息
+     */
+    @GetMapping("/allmsgs")
+    public R<?> allmsgs() {
+        return R.ok(this.chatMsgService.all());
+    }
 }

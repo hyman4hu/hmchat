@@ -9,11 +9,11 @@ import lombok.Data;
  * @date 2022/06/05
  */
 @Data
-public class ClientInfoVO {
+public class UserInfoVO {
 
-    private String clientId;
+    private String userId;
 
-    private String clientName;
+    private String fullName;
 
     private String ip;
 
