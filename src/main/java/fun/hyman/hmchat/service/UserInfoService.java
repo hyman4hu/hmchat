@@ -24,7 +24,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserInfoService {
 
-    private Cache<String, UserInfoVO> userInfoCache = new TimedCache<>(20 * 1000);// 保存客户端信息
+    private Cache<String, UserInfoVO> userInfoCache = new TimedCache<>(2 * 60 * 1000);// 保存客户端信息
 
     private final SimpMessagingTemplate messagingTemplate;
 

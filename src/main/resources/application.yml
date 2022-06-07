@@ -4,3 +4,26 @@ server:
 logging:
   file:
     path: /opt/hmchat/logs
+    
+spring:
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      max-file-size:
+        100MB
+      max-request-size:
+        1000MB
+  task:
+    execution:
+      pool:
+        # 核心线程数
+        core-size: 2
+        # 最大线程数
+        max-size: 100
+        # 队列容量
+        queue-capacity: 100
+
+mybatis:
+  mapper-locations:
+  - classpath:mapper/*.xml

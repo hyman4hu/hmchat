@@ -1,0 +1,29 @@
+debug: true
+
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mysql://hyman4hu.fun:3306/hmchat?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: hy220301
+    druid:
+      initial-size: 1
+      max-active: 20
+      min-idle: 1
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      validation-query: select 1
+      aop-patterns: fun.hyman.hmchat.*
+      stat-view-servlet:
+        enabled: true
+        login-username: druid
+        login-password: 123456
+        allow: ""
+        deny: ""
+      filter:
+        stat:
+          enabled: true
+

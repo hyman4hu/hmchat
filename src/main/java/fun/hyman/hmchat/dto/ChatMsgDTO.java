@@ -4,7 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import fun.hyman.hmchat.entity.ChatMsgDO;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 消息体
@@ -15,7 +17,20 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(Include.NON_NULL)
+@NoArgsConstructor
 public class ChatMsgDTO {
+
+    public ChatMsgDTO(ChatMsgDO po) {
+        this.fullName = po.getFullName();
+        this.userId = po.getUserId();
+        this.msg = po.getMsg();
+        this.datetime = po.getDatetime();
+        this.msgType = po.getMsgType();
+        this.fileOriginName = po.getFileOriginName();
+        this.fileType = po.getFileType();
+        this.fileSize = po.getFileSize();
+        this.filePath = po.getFilePath();
+    }
 
     /**
      * 用户姓名

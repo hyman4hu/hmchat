@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import fun.hyman.hmchat.common.R;
 import fun.hyman.hmchat.dto.ChatMsgDTO;
 import fun.hyman.hmchat.dto.HeartbeatDTO;
-import fun.hyman.hmchat.service.ChatMsgService;
+import fun.hyman.hmchat.service.IChatMsgService;
 import fun.hyman.hmchat.service.UserInfoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -33,7 +33,7 @@ public class ChatController {
 
     private final UserInfoService userInfoService;
 
-    private final ChatMsgService chatMsgService;
+    private final IChatMsgService chatMsgService;
 
 //    @SendTo("/topic/msg")
 	@MessageMapping("/say")
