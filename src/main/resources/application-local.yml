@@ -1,9 +1,6 @@
 debug: true
 
 spring:
-  config:
-    activate:
-      on-profile: local
   datasource:
     url: mpw:edNLKAmvotILZAsYP5tk2KPyqa4a7FHlgP/NX5GT0bFLPjbzMfPulmDRCGxOqJ989Mp5ZeKyiWJ34P8Cxx1m4+QL4MYCy1chKMcjRQUzP43LpS/7TmMfA+H1or8BmtYACIMqdIAkxymvrZfm5/nx2q6x8z8u4B3WA1wM66h8Ti8=
     username: mpw:aZSnSfK3jBWL0A0Hg6dXRw==

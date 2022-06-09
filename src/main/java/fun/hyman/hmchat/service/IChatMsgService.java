@@ -8,6 +8,7 @@ import fun.hyman.hmchat.dto.ChatMsgDTO;
 import fun.hyman.hmchat.entity.ChatMsgDO;
 
 /**
+ * 聊天消息
  * 
  * @author huyin3
  * @date 2022/06/07

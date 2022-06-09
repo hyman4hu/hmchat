@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import fun.hyman.hmchat.entity.ChatMsgDO;
 
 /**
+ * 聊天消息
  * 
  * @author Hyman
  * @date 2022/06/07
