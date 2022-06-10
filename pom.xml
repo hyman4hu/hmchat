@@ -8,7 +8,7 @@
 		<version>2.7.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>fun.hyman</groupId>
+	<groupId>fun.hyman4hu</groupId>
 	<artifactId>hmchat</artifactId>
 	<version>0.2.0</version>
 	<name>hmchat</name>
