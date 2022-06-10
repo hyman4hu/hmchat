@@ -41,6 +41,11 @@ public class SysUserDO {
     private String avatarPath;
 
     /**
+     * 最近登录时间
+     */
+    private LocalDateTime lastLoginTime;
+
+    /**
      * 创建时间
      */
     private LocalDateTime createTime;
